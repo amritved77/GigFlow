@@ -4,12 +4,12 @@ import cors from "cors";
 import cookieParser from "cookie-parser";
 import http from "http";
 
-import connectDB from "./config/db.js";
-import { initSocket } from "./config/socket.js";
+import connectDB from "./src/config/db.js";
+import { initSocket } from "./src/config/socket.js";
 
-import authRoutes from "./routes/auth.routes.js";
-import gigRoutes from "./routes/gig.routes.js";
-import bidRoutes from "./routes/bid.routes.js";
+import authRoutes from "./src/routes/auth.routes.js";
+import gigRoutes from "./src/routes/gig.routes.js";
+import bidRoutes from "./src/routes/bid.routes.js";
 
 dotenv.config();
 connectDB();
